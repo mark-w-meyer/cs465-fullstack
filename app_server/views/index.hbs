@@ -1,2 +1,66 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+<!DOCTYPE html>
+<!-- Website template by freewebsitetemplates.com -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Travlr Getaways Website Template</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+	<div id="background">
+		<div id="page">
+			{{> header }}
+			<div id="contents">
+				<div id="adbox">
+			{{#each index_hbs}}
+					<img src="images/{{this.image1}}" alt="Img">
+					<h1>{{this.intro_title}}</h1>
+					{{{this.intro}}}
+				</div>
+				<div id="main">
+					<div class="box">
+						<div>
+							<div>
+								<h3>Latest Blog</h3>
+								<ul>
+									<li>
+										<h4><a href="news">{{this.blog_title1}}</a></h4>
+										{{{this.blog_date1}}}
+										{{{this.blog1}}}
+									</li>
+									<li>
+										<h4><a href="news">{{this.blog_title2}}</a></h4>
+										{{{this.blog_date2}}}
+										{{{this.blog2}}}
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div id="testimonials" class="box">
+						<div>
+							<div>
+								<h3>Testimonials</h3>
+								{{{this.testimonials}}}
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="sidebar">
+					<div class="section">
+						<a href="rooms"><img src="images/{{this.image2}}" alt="Img"></a>
+					</div>
+					<div class="section">
+						<a href="dives.html"><img src="images/{{this.image3}}" alt="Img"></a>
+					</div>
+					<div class="section">
+						<a href="foods.html"><img src="images/{{this.image4}}" alt="Img"></a>
+					</div>
+				</div>
+			{{/each}}
+			</div>
+		</div>
+		{{> footer }}
+	</div>
+</body>
+</html>
