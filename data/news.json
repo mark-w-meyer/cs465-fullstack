@@ -1,30 +1,68 @@
-[
-    {
+{
+    "0N": {
+        "code": "LAT0220525",
+        "name": "latest0",
         "news": "NEWS<h3>Latest News</h3><li><a href=\"news\">2023 Best Beaches Contest Winners</a></li>"
-    }, {
+    }, 
+    "1N": {
+        "code": "LAT1220525",
+        "name": "latest1",
         "news": "NEWS<li><a href=\"news\">Top 10 Diving Spots</a></li>"
-    }, {
+    }, 
+    "2N": {
+        "code": "LAT2220525",
+        "name": "latest2",
         "news": "NEWS<li><a href=\"news\">Fishing ban to be implemented this year</a></li>"
-    }, {
+    }, 
+    "3N": {
+        "code": "LAT3220525",
+        "name": "latest3",
         "news": "NEWS<li><a href=\"news\">Lifeguard saves child from drowning</a></li>"
-    }, {
+    }, 
+    "0V": {
+        "code": "VAC0220525",
+        "name": "vacation0",
         "news": "NEWS<h3>Vacation Tips</h3><li><a href=\"news\">What to bring on the beach?</a></li>"
-    },     {
+    },   
+    "1V": {
+        "code": "VAC1220525",
+        "name": "vacation1",
         "news": "NEWS<li><a href=\"news\">Planning Fun Activities</a></li>"
-    }, {
+    }, 
+    "2V": {
+        "code": "VAC2220525",
+        "name": "vacation2",
         "news": "NEWS<li><a href=\"news\">Diving Checklist</a></li>"
-    }, {
+    }, 
+    "3V": {
+        "code": "VAC3220525",
+        "name": "vacation3",
         "news": "NEWS<li><a href=\"news\">First Aid</a></li>"
-    }, {
+    }, 
+    "4V": {
+        "code": "VAC4220525",
+        "name": "vacation4",
         "news": "NEWS<li><a href=\"news\">How to Build a Sand Castle?</a></li>"
-    }, {
+    }, 
+    "5V": {
+        "code": "VAC5220525",
+        "name": "vacation5",
         "news": "NEWS<li><a href=\"news\">Tanning Tips</a></li>"
-    }, {
+    }, 
+    "0E": {
+        "code": "EXP0220525",
+        "name": "experience0",
         "experience": "<p>XP Sed et augue lorem. In sit amet placerat arcu. Mauris volutpat ipsum ac justo mollis vel vestibulum orci gravida. Vestibulum sit amet porttitor odio. Nulla facilisi. Fusce at pretium felis. Sed consequat libero ut turpis venenatis ut aliquam risus semper. Etiam convallis mi vel risus pretium sodales. Etiam nunc lorem, ullamcorper vitae laoreet id, rutrum et tortor. Vivamus luctus, lacus id egestas facilisis, nunc nunc ultricies lorem, vitae pulvinar nibh urna vel velit.</p>"
-    }, {
+    }, 
+    "1E": {
+        "code": "EXP1220525",
+        "name": "experience1",
         "experience": "<p>XP Cras dui sapien, feugiat vitae tristique ut, lobortis tempor orci. Donec pulvinar sagittis metus ut tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In hac habitasse platea dictumst. Nulla at nunc sit amet justo cursus imperdiet. Mauris est leo, placerat nec eleifend eu, facilisis id dolor. Donec nisi nibh, elementum vitae imperdiet non, placerat et felis. Maecenas scelerisque odio quis arcu fringilla malesuada. Nulla facilisi. In libero nulla, fermentum ut pretium ac, pharetra et eros.</p>"
-    }, {
+    }, 
+    "2E": {
+        "code": "EXP2220525",
+        "name": "experience2",
         "experience": "<p>XP Phasellus viverra fringilla lacus, malesuada blandit velit iaculis dignissim. Suspendisse rutrum massa mauris. Donec quis tempus elit.Integer magna leo, posuere et dignissim vitae, porttitor at odio. Pellentesque a metus nec magna placerat volutpat.</p>"
     }
-]
+}
 									
