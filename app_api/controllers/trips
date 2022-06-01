@@ -4,7 +4,7 @@ const Model = mongoose.model("trips");
 
 const tripsList = async (req, res) => {
   Model.find({}).exec((err, trips) => {
-    if (!trips) {
+    if (trips.length == 0) {
       return res.status(404).json({ message: "trips not found" });
     } else if (err) {
       return res.status(404).json(err);
@@ -16,7 +16,7 @@ const tripsList = async (req, res) => {
 
 const tripsFindCode = async (req, res) => {
   Model.find({ code: req.params.tripCode }).exec((err, trip) => {
-    if (!trip) {
+    if (trip.length == 0) {
       return res.status(404).json({ message: "trip not found" });
     } else if (err) {
       return res.status(404).json(err);
