@@ -3,7 +3,6 @@ const apiOptions = {
 server: 'http://localhost:3000'
 };
 
-
 //const fs = require('fs');
 //const trips = JSON.parse(fs.readFileSync('./data/trips.json', 'utf8'));
 
