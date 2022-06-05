@@ -1,18 +1,23 @@
-[
-    {
+{
+    "1": {
+        "code": "FRST220525",
         "name": "ROOMSFirst Class Room",
         "image": "first-class.jpg",
         "description": "ROOMS<p>Cras dui sapien, feugiat vitae tristique ut, lobortis tempor orci. Donec pulvinar sagittis metus ut tristique. Pellentes que habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas idios.</p>",
         "rate": "ROOMS<span class=\"rate\">Rate: 220 / Day</span>"
-    }, {
+    }, 
+    "2": {
+        "code": "DLUX220525",
         "name": "ROOMSDeluxe Room",
         "image": "deluxe.jpg",
         "description": "ROOMS<p>Sed et augue lorem. In sit amet placerat arcu. Mauris volutpat ipsum ac justo mollis vel vestibulum orci gravida. Vestibulum sit amet porttitor odio. Nulla facilisi. Fusce at pretium felis.</p>",
         "rate": "ROOMS<span class=\"rate\">Rate: 150 / Day</span>"
-    }, {
+    }, 
+    "3": {
+        "code": "SUIT220525",
         "name": "ROOMSSuite Room",
         "image": "suite.jpg",
         "description": "ROOMS<p>Sed et augue lorem. In sit amet placerat arcu. Mauris volutpat ipsum ac justo mollis vel vestibulum orci gravida. Vestibulum sit amet porttitor odio. Nulla facilisi. Fusce at pretium felis.</p>",
         "rate": "ROOMS<span class=\"rate\">Rate: 180 / Day</span>"
     }
-]
+}

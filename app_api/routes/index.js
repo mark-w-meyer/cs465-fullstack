@@ -3,6 +3,7 @@ const router =express.Router();
 
 const tripsController = require('../controllers/trips');
 
+/* Trips routers */
 router
     .route('/trips')
     .get(tripsController.tripsList);
