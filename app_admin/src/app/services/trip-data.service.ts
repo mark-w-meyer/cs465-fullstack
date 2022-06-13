@@ -1,15 +1,14 @@
-import { Injectable, Inject } from '@angular/core';
+import { Injectable } from '@angular/core';
 import { Http, Headers } from  '@angular/http';
 import { Trip } from 'src/app/models/trip';
-import { BROWSER_STORAGE } from "../storage";
+
 
 
 @Injectable()
 export class TripDataService {
 
   constructor(
-    private http: Http,
-    @Inject(BROWSER_STORAGE) private storage: Storage
+    private http: Http
   ) {}
 
   private apiBaseUrl = 'http://localhost:3000/api/';

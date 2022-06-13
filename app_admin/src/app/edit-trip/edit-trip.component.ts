@@ -10,23 +10,23 @@ import { TripDataService } from '../services/trip-data.service';
   templateUrl: './edit-trip.component.html',
   styleUrls: ['./edit-trip.component.css']
 })
+
 export class EditTripComponent implements OnInit {
 
   editForm: FormGroup;
   submitted = false;
 
-  @Injectable
   constructor(
     private formBuilder: FormBuilder,
     private router: Router,
-    private tripService: TripDataService
+    private tripService: TripDataService,
     private http: Http,
     @Inject(BROWSER_STORAGE) private storage: Storage
   ) { }
 
   ngOnInit() {
     // retrieve stashed tripId
-    let tripCode = localStorage.getItem("tripCode");
+    let tripCode = this.storage.getItem("tripCode");
     if (!tripCode) {
       alert("Something wrong, couldn't find where I stashed tripCode!");
       this.router.navigate(['']);
