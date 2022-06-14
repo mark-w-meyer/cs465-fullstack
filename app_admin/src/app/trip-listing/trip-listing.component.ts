@@ -25,11 +25,6 @@ export class TripListingComponent implements OnInit {
     this.router.navigate(['add-trip']);
   }
 
-  private editTrip(): void {
-    console.log('Inside TripListingComponent#editTrip');
-    this.router.navigate(['edit-trip']);
-  }
-  
   private getTrips(): void {
     console.log('Inside TripListingComponent#getTrips');
     this.message = 'Searching for trips';
@@ -42,8 +37,6 @@ export class TripListingComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.addTrip();
-    this.editTrip();
     this.getTrips();
   }
   
