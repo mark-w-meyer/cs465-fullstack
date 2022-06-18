@@ -40,7 +40,7 @@
 
     <div class="form-group">
       <label>Start Date:</label>
-      <input type="date" formControlName="start"
+      <input type="string" formControlName="start"
         placeholder="Start" class="form-control"
         [ngClass]="{ 'is-invalid': submitted && f.start.errors }">
       <div *ngIf="submitted && f.start.errors">
