@@ -22,10 +22,10 @@ export class TripListingComponent implements OnInit {
     private router: Router
     ) { }
 
-    private addTrip(): void {
-      console.log('Inside TripListingComponent#addTrip');
-      this.router.navigate(['add-trip']);
-    }
+  private addTrip(): void {
+    console.log('Inside TripListingComponent#addTrip');
+    this.router.navigate(['add-trip']);
+  }
 
   private getTrips(): void {
     console.log('Inside TripListingComponent#getTrips');
