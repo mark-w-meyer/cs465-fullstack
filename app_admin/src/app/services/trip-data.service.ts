@@ -38,10 +38,10 @@ export class TripDataService {
     console.log("Inside TripDataService#addTrip");
     const headers = new Headers({
       "Content-Type": "application/json",
-      Authorization: `Bearer ${localStorage.getItem("travlr-token")}`,
+      "Authorization": `Bearer ${localStorage.getItem("travlr-token")}`,
     });
     return this.http
-      .post(this.tripUrl, formData, { headers: headers })
+      .post(this.tripUrl, formData, { headers })
       .toPromise()
       .then((response) => response.json() as Trip[])
       .catch(this.handleError);
@@ -51,10 +51,10 @@ export class TripDataService {
     console.log("Inside TripDataService#updateTrip");
     const headers = new Headers({
       "Content-Type": "application/json",
-      Authorization: `Bearer ${localStorage.getItem("travlr-token")}`,
+      "Authorization": `Bearer ${localStorage.getItem("travlr-token")}`,
     });
     return this.http
-      .put(this.tripUrl + formData.code, formData, { headers: headers })
+      .put(this.tripUrl + formData.code, formData, { headers })
       .toPromise()
       .then((response) => response.json() as Trip[])
       .catch(this.handleError);
