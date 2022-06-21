@@ -15,7 +15,6 @@ const getUser = (req, res, callback) => {
       callback(req, res, user.name);
     });
   } else {
-    console.log(req);
     return res.status(404).json({ message: "User not found" });
   }
 };
