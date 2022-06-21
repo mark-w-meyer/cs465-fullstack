@@ -11,7 +11,10 @@ const routes: Routes = [
     { path: 'edit-trip', component: EditTripComponent },
     { path: 'login', component: LoginComponent },
     { path: 'list-trips', component: TripListingComponent },
-    { path: '', component: HomeComponent, pathMatch: 'full' }
+    { path: '', component: HomeComponent, pathMatch: 'full' },
+
+    // otherwise redirect to home
+    { path: '**', redirectTo: '' }
 ]
 
 @NgModule({

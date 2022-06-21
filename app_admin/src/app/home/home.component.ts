@@ -12,7 +12,7 @@ export class HomeComponent implements OnInit {
     private authService: AuthenticationService
   ) { }
 
-  ngOnInit() {
+  ngOnInit(): void {
   }
 
   public isLoggedIn(): boolean {
