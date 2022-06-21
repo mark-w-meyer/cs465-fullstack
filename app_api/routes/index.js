@@ -8,6 +8,7 @@ const auth = jwt({
   algorithms: ["HS256"],
 });
 
+
 const authController = require("../controllers/authentication");
 const tripsController = require("../controllers/trips");
 
@@ -26,11 +27,7 @@ router
 
 router
     .route("/trips/:tripCode")
-    .get(tripsController.tripsList)
+    .get(tripsController.tripsFindCode)
     .put(auth, tripsController.tripsUpdateTrip);   
-
-router
-    .route("/trips/:tripCode")
-    .get(tripsController.tripsFindCode);
 
 module.exports = router;

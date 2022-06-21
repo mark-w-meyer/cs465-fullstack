@@ -42,7 +42,7 @@ export class TripListingComponent implements OnInit {
     return this.authService.isLoggedIn();
   }
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.getTrips();
   }
 

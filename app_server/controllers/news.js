@@ -1,12 +1,9 @@
-const fs = require('fs');
-
-const news_hbs = JSON.parse(fs.readFileSync('./data/news.json', 'utf8'));
-
-/* GET news view */
+/* GET News View */
 const news = (req, res) => {
-    res.render('news', { title: 'News - Travlr Getaways Website Template', news_hbs });
-};
-
-module.exports = {
-    news
-};
+    pageTitle = process.env.npm_package_description + " - News"; // process.env.npm_package_description can only be accessed if you use 'npm start' *nodemon will not work
+    res.render("news", { title: pageTitle });
+  };
+  
+  module.exports = {
+    news,
+  };
